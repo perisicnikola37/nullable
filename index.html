@@ -1,106 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credentials</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body class="bg-gray-100 p-8">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Credentials</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body class="bg-gray-100 p-8">
 
-    <div class="container mx-auto relative">
-        <!-- GitHub Icon -->
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Microservices-dotnet-bank-system [Credentials]</h1>
-        
-        <a target="_blank" href="https://github.com/perisicnikola37/microservices-dotnet-bank-system/tree/develop" 
-        class="duration-300 absolute top-0 right-4 text-3xl text-gray-800 hover:text-blue-500">
-            <i class="fab fa-github"></i>
-        </a>
+        <div class="container mx-auto relative">
+            <!-- GitHub Icon -->
+            <h1
+                class="text-3xl font-bold text-center text-gray-800 mb-8">Microservices-dotnet-bank-system
+                [Credentials]</h1>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- Message broker - RabbitMQ -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
-                <img src="https://static-00.iconduck.com/assets.00/rabbitmq-icon-1936x2048-zlik4nni.png" alt="RabbitMQ Logo" class="h-16 mx-auto mb-4">
-                <h2 class="text-xl font-semibold text-gray-700">Message Broker</h2>
-                <p class="mt-2 text-gray-500">URL: <a href="http://localhost:15672" class="text-blue-500">http://localhost:15672</a></p>
-                <p class="mt-2 font-semibold text-gray-700">Credentials:</p>
-                <ul class="list-disc pl-5 text-gray-600">
-                    <li><strong>Username:</strong> admin@gmail.com</li>
-                    <li><strong>Password:</strong> _rabbitmq_3gVE_0c!BbUby+</li>
-                </ul>
-            </div>
+            <a target="_blank"
+                href="https://github.com/perisicnikola37/microservices-dotnet-bank-system/tree/develop"
+                class="duration-300 absolute top-0 right-4 text-3xl text-gray-800 hover:text-blue-500">
+                <i class="fab fa-github"></i>
+            </a>
 
-            <!-- Database and container management tools -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
-                <img src="https://www.svgrepo.com/show/331488/mongodb.svg" alt="pgAdmin Logo" class="h-16 mx-auto mb-4">
-                <h2 class="text-xl font-semibold text-gray-700">Database & Container Management</h2>
-                <div class="space-y-2">
-                    <p class="text-gray-500">pgAdmin: <a href="http://localhost:5050" class="text-blue-500">http://localhost:5050</a></p>
-                    <p class="text-gray-500">mongo-express: <a href="http://localhost:8081" class="text-blue-500">http://localhost:8081</a></p>
-                    <p class="text-gray-500">Portainer: <a href="http://localhost:9000" class="text-blue-500">http://localhost:9000</a></p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Message broker - RabbitMQ -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
+                    <img
+                        src="https://www.svgrepo.com/show/303576/rabbitmq-logo.svg"
+                        alt="RabbitMQ Logo" class="h-16 mx-auto mb-4">
+                    <h2 class="text-xl font-semibold text-gray-700">Message
+                        Broker</h2>
+                    <p class="mt-2 text-gray-500">URL: <a
+                            href="http://localhost:15672"
+                            class="text-blue-500">http://localhost:15672</a></p>
+                    <p class="mt-2 font-semibold text-gray-700">Credentials:</p>
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li><strong>Username:</strong> admin@gmail.com</li>
+                        <li><strong>Password:</strong>
+                            _rabbitmq_3gVE_0c!BbUby+</li>
+                    </ul>
                 </div>
-                <p class="mt-2 font-semibold text-gray-700">Credentials:</p>
-                <ul class="list-disc pl-5 text-gray-600">
-                    <li><strong>pgAdmin Username:</strong> admin@gmail.com</li>
-                    <li><strong>pgAdmin Password:</strong> _pgadmin_v-r6yVMv5G30V#2</li>
-                    <li><strong>mongo-express Username:</strong> admin</li>
-                    <li><strong>mongo-express Password:</strong> _transactiondatabase_9G2sTQ*HM5</li>
-                </ul>
-            </div>
 
-            <!-- API Services -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
-                <img src="https://static-00.iconduck.com/assets.00/swagger-icon-2048x2048-563qbzey.png" alt="Swagger Logo" class="h-16 mx-auto mb-4">
-                <h2 class="text-xl font-semibold text-gray-700">API Services</h2>
-                <div class="space-y-2">
-                    <p class="text-gray-500">Account API: <a href="http://localhost:8001/swagger/index.html" class="text-blue-500">http://localhost:8001/swagger/index.html</a></p>
-                    <p class="text-gray-500">Customer API: <a href="http://localhost:8002/swagger/index.html" class="text-blue-500">http://localhost:8002/swagger/index.html</a></p>
-                    <p class="text-gray-500">Transaction API: <a href="http://localhost:8003/swagger/index.html" class="text-blue-500">http://localhost:8003/swagger/index.html</a></p>
+                <!-- Database and container management tools -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
+                    <img src="https://www.svgrepo.com/show/331488/mongodb.svg"
+                        alt="pgAdmin Logo" class="h-16 mx-auto mb-4">
+                    <h2 class="text-xl font-semibold text-gray-700">Database &
+                        Container Management</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-500">pgAdmin: <a
+                                href="http://localhost:5050"
+                                class="text-blue-500">http://localhost:5050</a></p>
+                        <p class="text-gray-500">mongo-express: <a
+                                href="http://localhost:8081"
+                                class="text-blue-500">http://localhost:8081</a></p>
+                        <p class="text-gray-500">Portainer: <a
+                                href="http://localhost:9000"
+                                class="text-blue-500">http://localhost:9000</a></p>
+                    </div>
+                    <p class="mt-2 font-semibold text-gray-700">Credentials:</p>
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li><strong>pgAdmin Username:</strong>
+                            admin@gmail.com</li>
+                        <li><strong>pgAdmin Password:</strong>
+                            _pgadmin_v-r6yVMv5G30V#2</li>
+                        <li><strong>mongo-express Username:</strong> admin</li>
+                        <li><strong>mongo-express Password:</strong>
+                            _transactiondatabase_9G2sTQ*HM5</li>
+                    </ul>
                 </div>
-            </div>
 
-            <!-- Databases -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
-                <img src="https://www.kreaweb.be/wp-content/uploads/2023/03/postgresql.webp" alt="PostgreSQL Logo" class="h-16 mx-auto mb-4">
-                <h2 class="text-xl font-semibold text-gray-700">Databases</h2>
-                <div class="space-y-2">
-                    <p class="text-gray-500">Account Database (PostgreSQL)</p>
-                    <p class="text-gray-500">Customer Database (PostgreSQL)</p>
-                    <p class="text-gray-500">Transaction Database (MongoDB)</p>
+                <!-- API Services -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
+                    <img
+                        src="https://images.seeklogo.com/logo-png/33/1/swagger-logo-png_seeklogo-338589.png"
+                        alt="Swagger Logo" class="h-16 mx-auto mb-4">
+                    <h2 class="text-xl font-semibold text-gray-700">API
+                        Services</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-500">Account API: <a
+                                href="http://localhost:8001/swagger/index.html"
+                                class="text-blue-500">http://localhost:8001/swagger/index.html</a></p>
+                        <p class="text-gray-500">Customer API: <a
+                                href="http://localhost:8002/swagger/index.html"
+                                class="text-blue-500">http://localhost:8002/swagger/index.html</a></p>
+                        <p class="text-gray-500">Transaction API: <a
+                                href="http://localhost:8003/swagger/index.html"
+                                class="text-blue-500">http://localhost:8003/swagger/index.html</a></p>
+                    </div>
                 </div>
-                <p class="mt-2 font-semibold text-gray-700">Credentials:</p>
-                <ul class="list-disc pl-5 text-gray-600">
-                    <li><strong>Account DB Username:</strong> admin</li>
-                    <li><strong>Account DB Password:</strong> _accountdatabasep_wPRhN1iCfGsb</li>
-                    <li><strong>Customer DB Username:</strong> admin</li>
-                    <li><strong>Customer DB Password:</strong> _customerdatabasep_4vvFpVXgTJd</li>
-                    <li><strong>Transaction DB Username:</strong> admin</li>
-                    <li><strong>Transaction DB Password:</strong> _transactiondatabase_9G2sTQ*HM5</li>
-                </ul>
-            </div>
 
-            <!-- Other services -->
-            <div class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
-                <img src="https://static-00.iconduck.com/assets.00/elasticsearch-icon-1839x2048-g9zblqim.png" alt="Elastic Logo" class="h-16 mx-auto mb-4">
-                <h2 class="text-xl font-semibold text-gray-700">Other Services</h2>
-                <div class="space-y-2">
-                    <p class="text-gray-500">Custom nuget package: <a href="https://www.nuget.org/packages/ApiVersioningLib" class="text-blue-500">ApiVersioningLib</a></p>
-                    <p class="text-gray-500">Elastic Search: <a href="http://localhost:9200" class="text-blue-500">http://localhost:9200</a></p>
-                    <p class="text-gray-500">Kibana: <a href="http://localhost:5601" class="text-blue-500">http://localhost:5601</a></p>
-                    <p class="text-gray-500">Web status application: <a href="http://localhost:8007/healthchecks-ui" class="text-blue-500">http://localhost:8007/healthchecks-ui</a></p>
+                <!-- Databases -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
+                    <img
+                        src="https://www.kreaweb.be/wp-content/uploads/2023/03/postgresql.webp"
+                        alt="PostgreSQL Logo" class="h-16 mx-auto mb-4">
+                    <h2
+                        class="text-xl font-semibold text-gray-700">Databases</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-500">Account Database
+                            (PostgreSQL)</p>
+                        <p class="text-gray-500">Customer Database
+                            (PostgreSQL)</p>
+                        <p class="text-gray-500">Transaction Database
+                            (MongoDB)</p>
+                    </div>
+                    <p class="mt-2 font-semibold text-gray-700">Credentials:</p>
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li><strong>Account DB Username:</strong> admin</li>
+                        <li><strong>Account DB Password:</strong>
+                            _accountdatabasep_wPRhN1iCfGsb</li>
+                        <li><strong>Customer DB Username:</strong> admin</li>
+                        <li><strong>Customer DB Password:</strong>
+                            _customerdatabasep_4vvFpVXgTJd</li>
+                        <li><strong>Transaction DB Username:</strong> admin</li>
+                        <li><strong>Transaction DB Password:</strong>
+                            _transactiondatabase_9G2sTQ*HM5</li>
+                    </ul>
                 </div>
-                <p class="mt-2 font-semibold text-gray-700">Health checks:</p>
-                <ul class="list-disc pl-5 text-gray-600">
-                    <li><a href="http://localhost:8001/health-check" class="text-blue-500">Account service</a></li>
-                    <li><a href="http://localhost:8002/health-check" class="text-blue-500">Customer service</a></li>
-                    <li><a href="http://localhost:8003/health-check" class="text-blue-500">Transaction service</a></li>
-                </ul>
-            </div>
 
+                <!-- Other services -->
+                <div
+                    class="bg-white p-6 rounded-lg shadow-lg hover:bg-gray-100 duration-300">
+                    <img
+                        src="https://img.icons8.com/color/600/elasticsearch.png"
+                        alt="Elastic Logo" class="h-16 mx-auto mb-4">
+                    <h2 class="text-xl font-semibold text-gray-700">Other
+                        Services</h2>
+                    <div class="space-y-2">
+                        <p class="text-gray-500">Custom nuget package: <a
+                                href="https://www.nuget.org/packages/ApiVersioningLib"
+                                class="text-blue-500">ApiVersioningLib</a></p>
+                        <p class="text-gray-500">Elastic Search: <a
+                                href="http://localhost:9200"
+                                class="text-blue-500">http://localhost:9200</a></p>
+                        <p class="text-gray-500">Kibana: <a
+                                href="http://localhost:5601"
+                                class="text-blue-500">http://localhost:5601</a></p>
+                        <p class="text-gray-500">Web status application: <a
+                                href="http://localhost:8007/healthchecks-ui"
+                                class="text-blue-500">http://localhost:8007/healthchecks-ui</a></p>
+                    </div>
+                    <p class="mt-2 font-semibold text-gray-700">Health
+                        checks:</p>
+                    <ul class="list-disc pl-5 text-gray-600">
+                        <li><a href="http://localhost:8001/health-check"
+                                class="text-blue-500">Account service</a></li>
+                        <li><a href="http://localhost:8002/health-check"
+                                class="text-blue-500">Customer service</a></li>
+                        <li><a href="http://localhost:8003/health-check"
+                                class="text-blue-500">Transaction
+                                service</a></li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-    </div>
 
-</body>
+    </body>
 </html>
